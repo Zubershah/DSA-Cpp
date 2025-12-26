@@ -35,6 +35,38 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+// int nCr(int n, int r)
+// {
+//     /*
+//     nCr = n! / r! * ( n - r ) !
+//     */
+//     int nfactorial = 1, rfactorial = 1, nrfactorial = 1;
+//     for (int i = 1; i <= n; i++)
+//     {
+//         nfactorial *= i;
+//     }
+
+//     for (int j = 1; j <= r; j++)
+//     {
+//         rfactorial *= j;
+//     }
+
+//     for (int i = 1; i <= n - r; i++)
+//     {
+//         nrfactorial *= i;
+//     }
+
+//     return (nfactorial / (rfactorial * nrfactorial));
+// }
+// int main()
+// {
+//     /* calculate nCr binomial co-efficient for n & r */
+//     int n = 9, r = 1;
+//     cout << nCr(n, r);
+// }
+
 /* square Pattern */
 
 // #include <iostream>
@@ -523,68 +555,69 @@
 //     return 0;
 // }
 
-#include <iostream>
-using namespace std;
-int main()
-{
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
 
-    // *      *     6 space between stars
-    // **    **     4 space between stars
-    // ***  ***     2 space between stars
-    // ********
-    // ***  ***     2 space between stars
-    // **    **     4 space between stars
-    // *      *     6 space between stars
+//     // *      *     6 space between stars
+//     // **    **     4 space between stars
+//     // ***  ***     2 space between stars
+//     // ********
+//     // ***  ***     2 space between stars
+//     // **    **     4 space between stars
+//     // *      *     6 space between stars
 
-    // To solve above pattern divide the pattern into 2.
-    // Top
-    // *      *     6 space between stars
-    // **    **     4 space between stars
-    // ***  ***     2 space between stars
-    // ********
-    int n = 4;
-    for (int i = 1; i <= n; i++)
-    {
-        for (int j = 1; j <= i; j++)
-        {
-            cout << "*";
-        }
-        if (i != n)
-        {
-            for (int k = 1; k <= 2 * (n - i); k++)
-            {
-                cout << " ";
-            }
-        }
-        for (int l = 1; l <= i; l++)
-        {
-            cout << "*";
-        }
-        cout << endl;
-    }
-    // Bottom
-    // ***  ***     2 space between stars
-    // **    **     4 space between stars
-    // *      *     6 space between stars
-    for (int i = 1; i <= n - 1; i++)
-    {
-        for (int j = 1; j <= n - i; j++)
-        {
-            cout << "*";
-        }
-        if (i != n)
-        {
-            for (int k = 1; k <= 2 * i; k++)
-            {
-                cout << " ";
-            }
-        }
-        for (int l = 1; l <= n - i; l++)
-        {
-            cout << "*";
-        }
-        cout << endl;
-    }
+//     // To solve above pattern divide the pattern into 2.
+//     // Top
+//     // *      *     6 space between stars
+//     // **    **     4 space between stars
+//     // ***  ***     2 space between stars
+//     // ********
+//     int n = 4;
+//     for (int i = 1; i <= n; i++)
+//     {
+//         for (int j = 1; j <= i; j++)
+//         {
+//             cout << "*";
+//         }
+//         if (i != n)
+//         {
+//             for (int k = 1; k <= 2 * (n - i); k++)
+//             {
+//                 cout << " ";
+//             }
+//         }
+//         for (int l = 1; l <= i; l++)
+//         {
+//             cout << "*";
+//         }
+//         cout << endl;
+//     }
+//     // Bottom
+//     // ***  ***     2 space between stars
+//     // **    **     4 space between stars
+//     // *      *     6 space between stars
+//     for (int i = 1; i <= n - 1; i++)
+//     {
+//         for (int j = 1; j <= n - i; j++)
+//         {
+//             cout << "*";
+//         }
+//         if (i != n)
+//         {
+//             for (int k = 1; k <= 2 * i; k++)
+//             {
+//                 cout << " ";
+//             }
+//         }
+//         for (int l = 1; l <= n - i; l++)
+//         {
+//             cout << "*";
+//         }
+//         cout << endl;
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
+
